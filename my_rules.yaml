@@ -1,0 +1,15 @@
+bscore_rules : {}
+
+ta_parameters: {
+  sma: {'window': 5, 'price':'close'},
+  bb: {'window': 20, 'price':'close', 'sd': 2},
+  rsi: {'window': 14, 'price':'close'},
+  vwap: {'window': 14, 'price':'close'},
+  atr: {'window': 14, 'price':'close'},
+  price_range: {'window': 14},
+  }
+
+tickers_list: []
+manual_tickers: ['PINS','ETSY','NET','CRSP','CRWD','SKLZ','OPEN']
+expiry_cutoff: '2022-01-01'
+finviz_url: 'https://www.finviz.com/screener.ashx?v=111&f=cap_small,geo_usa,sh_avgvol_o300,sh_opt_option,sh_short_low&ft=4&&o=-change'
